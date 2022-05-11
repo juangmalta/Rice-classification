@@ -13,3 +13,5 @@ clf = LogisticRegression(random_state=0, max_iter=1000).fit(X, Y)
 print(clf.score(X_train, Y_train))
 print(clf.score(X_test, Y_test))
 
+plt.scatter(X_train['Area'], X_train['Perimeter'], color='red', label='train')
+plt.show()
