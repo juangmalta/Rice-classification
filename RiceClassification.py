@@ -23,7 +23,7 @@ clf = LogisticRegression(random_state=0, max_iter=1000).fit(X, Y)
 print(clf.score(X_train, Y_train))
 print(clf.score(X_test, Y_test))
 
-#5. Predict the class of a new sample
+#5. Plot the decision boundary
 ax = plt.axes()
 plt.scatter(X_train['Area'], X_train['Perimeter'], c=Y_train, cmap='autumn', label='Training data')
 cb = plt.colorbar(label='Rice Type', ticks=[0, 1])
@@ -54,5 +54,21 @@ cb = plt.colorbar(label='Rice Type', ticks=[0, 1])
 cb.ax.set_yticklabels(['Gonen', 'Jasmine'])
 plt.ylabel('MinorAxisLength')
 plt.xlabel('MajorAxisLength')
+plt.show()
+
+ax = plt.axes()
+plt.scatter(X_train['Eccentricity'], X_train['Roundness'], c=Y_train, cmap='autumn', label='Training data')
+cb = plt.colorbar(label='Rice Type', ticks=[0, 1])
+cb.ax.set_yticklabels(['Gonen', 'Jasmine'])
+plt.ylabel('Eccentricity')
+plt.xlabel('Roundness')
+plt.show()
+
+ax = plt.axes()
+plt.scatter(X_test['Eccentricity'], X_test['Roundness'], c=Y_test, cmap='autumn', label='Test data')
+cb = plt.colorbar(label='Rice Type', ticks=[0, 1])
+cb.ax.set_yticklabels(['Gonen', 'Jasmine'])
+plt.ylabel('Eccentricity')
+plt.xlabel('Roundness')
 plt.show()
 
