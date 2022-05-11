@@ -14,13 +14,13 @@ print(clf.score(X_train, Y_train))
 print(clf.score(X_test, Y_test))
 
 fig = plt.figure(figsize=(10,8))
-#plt.scatter(X_test['Area'],X_test['Perimeter'],marker='o')
+plt.scatter(X_test['Area'],X_test['Perimeter'],marker='o',c=Y_test)
 
-for i in range(len(X_train['Area'].values)):
-    if(Y_train.values[i] == 0):
-        plt.scatter(X_train['Area'].values[i], X_train['Perimeter'].values[i], marker='o', c="blue")
-    else:
-        plt.scatter(X_train['Area'].values[i], X_train['Perimeter'].values[i], marker='o', c="red")
+# for i in range(len(X_train['Area'].values)):
+#     if(Y_train.values[i] == 0):
+#         plt.scatter(X_train['Area'].values[i], X_train['Perimeter'].values[i], marker='o', c="blue")
+#     else:
+#         plt.scatter(X_train['Area'].values[i], X_train['Perimeter'].values[i], marker='o', c="red")
     
 
 
