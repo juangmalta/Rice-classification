@@ -13,5 +13,10 @@ clf = LogisticRegression(random_state=0, max_iter=1000).fit(X, Y)
 print(clf.score(X_train, Y_train))
 print(clf.score(X_test, Y_test))
 
-plt.scatter(X_train['Area'], X_train['Perimeter'], color='red', label='train')
+fig = plt.figure(figsize=(10,8))
+plt.scatter(X_test['Area'],X_test['Perimeter'],marker='o',alpha=0.3,cmap='viridis')
+
+plt.xlabel("feature 1")
+plt.ylabel("feature 2")
+plt.title('Random Classification Data with 2 classes')
 plt.show()
