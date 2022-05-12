@@ -6,18 +6,18 @@ from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix
 
-x = pd.read_csv("./riceClassification.csv")
+data = pd.read_csv("./riceClassification.csv",index_col='id')
 
-print(x.columns)
 
-print(x.head())
 
 #featuresdrop= ['id','Area','MajorAxisLength','MinorAxisLength','Eccentricity','ConvexArea','EquivDiameter','Extent','Perimeter','Roundness','AspectRation','Class']
 #data=data.drop(featuresdrop,axis=1)
 #data=data.dropna
+data=data.dropna()
 
-y=x['Class']
-x=x.drop('Class',axis=1)
+y=data['Class']
+x=data.drop('Class',axis=1)
+
 
 testsize=0.2
 
