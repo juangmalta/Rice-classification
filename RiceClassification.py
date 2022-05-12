@@ -22,11 +22,13 @@ clf = LogisticRegression(random_state=0, max_iter=1000).fit(X, Y)
 #4. Evaluate the model
 print(clf.score(X_train, Y_train))
 print(clf.score(X_test, Y_test))
+
+#5. Confusion Matrix
 y_pred = clf.predict(X_test)
 cnf_matrix = metrics.confusion_matrix(Y_test, y_pred)
 print(cnf_matrix)
 
-#5. Plot the decision boundary
+#6. Plot the decision boundary
 ax = plt.axes()
 plt.scatter(X_train['Area'], X_train['Perimeter'], c=Y_train, cmap='autumn', label='Training data')
 cb = plt.colorbar(label='Rice Type', ticks=[0, 1])
