@@ -79,14 +79,4 @@ cb = plt.colorbar(label='Rice Type', ticks=[0, 1])
 cb.ax.set_yticklabels(['Gonen', 'Jasmine'])
 plt.xlabel('AspectRation')
 plt.ylabel('Roundness')
-
-
-#7. Plot the decision boundary
-ax = plt.axes()
-plt.scatter(X_train['Area'], X_train['Perimeter'], c=Y_train, cmap='autumn', label='Training data')
-cb = plt.colorbar(label='Rice Type', ticks=[0, 1])
-cb.ax.set_yticklabels(['Gonen', 'Jasmine'])
-plt.xlabel('Area')
-plt.ylabel('Perimeter')
-
 plt.show()
