@@ -1,15 +1,14 @@
 from cProfile import label
 from re import X
 from statistics import linear_regression
-from sklearn import linear_model
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
+from sklearn import metrics
 
 #1. Load the data
 data = pd.read_csv("./riceClassification.csv", index_col='id')
-print(data)
 
 #2. Clean the data
 data = data.dropna()
@@ -23,6 +22,9 @@ clf = LogisticRegression(random_state=0, max_iter=1000).fit(X, Y)
 #4. Evaluate the model
 print(clf.score(X_train, Y_train))
 print(clf.score(X_test, Y_test))
+y_pred = clf.predict(X_test)
+cnf_matrix = metrics.confusion_matrix(Y_test, y_pred)
+print(cnf_matrix)
 
 #5. Plot the decision boundary
 ax = plt.axes()
