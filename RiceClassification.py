@@ -1,7 +1,5 @@
 #1. Loading libraries
-from cProfile import label
 from re import X
-from statistics import linear_regression
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
@@ -96,4 +94,3 @@ cb.ax.set_yticklabels(['Gonen', 'Jasmine'])
 plt.xlabel('AspectRation')
 plt.ylabel('Roundness')
 plt.show()
-
