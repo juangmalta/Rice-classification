@@ -20,15 +20,17 @@ X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_
 clf = LogisticRegression(random_state=0, max_iter=1000).fit(X_train, Y_train)
 
 #5. Evaluate the model
-print("Accuracy of Logistic regression classifier on training set: {:.2f}".format(clf.score(X_train, Y_train)))
-print("Accuracy of Logistic regression classifier on test set: {:.2f}".format(clf.score(X_test, Y_test)))
+print("Accuracy of Logistic regression classifier on training set: {:.5f}".format(clf.score(X_train, Y_train)))
+print("Accuracy of Logistic regression classifier on test set: {:.5f}".format(clf.score(X_test, Y_test)))
 
 #6. Confusion Matrix
 y_pred = clf.predict(X_train)
 cnf_matrix = metrics.confusion_matrix(Y_train, y_pred)
+print("Confusion matrix train:")
 print(cnf_matrix)
 y_pred_test = clf.predict(X_test)
 cnf_matrix_test = metrics.confusion_matrix(Y_test, y_pred_test)
+print("Confusion matrix test:")
 print(cnf_matrix_test)
 
 
