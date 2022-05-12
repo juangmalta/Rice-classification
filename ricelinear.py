@@ -12,10 +12,6 @@ print(x.columns)
 
 print(x.head())
 
-featuresdrop= ['id','Area','MajorAxisLength','MinorAxisLength','Eccentricity','ConvexArea','EquivDiameter','Extent','Perimeter','Roundness','AspectRation','Class']
-x=x.drop(featuresdrop,axis=1)
-x=x.dropna
-
 y=x['Class']
 x=x.drop('Class',axis=1)
 
