@@ -1,14 +1,19 @@
+#Linear Regression for the rice dataset using sklearn
+
 #Libraries used:
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix
+import matplotlib.pyplot as plt
 
 #Load the data
 data = pd.read_csv("./riceClassification.csv",index_col='id')
 
+#Clean the data and remove the null values
 data=data.dropna()
 
+#Y is the target variable and X is the predictor variable
 y=data['Class']
 x=data.drop(['Class','Extent'],axis=1)
 
