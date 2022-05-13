@@ -12,7 +12,9 @@ Gael Rodríguez Gómez A01639279
 
 ## Dataset 
 
-La información usada en los modelos (dataset) fue extraida de la siguiente liga: [Rice type classification](https://www.kaggle.com/datasets/mssmartypants/rice-type-classification)
+La información usada en los modelos (dataset) fue extraida de la siguiente liga: 
+
+[Rice type classification](https://www.kaggle.com/datasets/mssmartypants/rice-type-classification)
 
 ## Fuentes externas
 
