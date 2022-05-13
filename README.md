@@ -1,4 +1,4 @@
-# Rice classification
+# Rice Classification
 
 Modelos para clasificar arroz según el tipo (Jasmine-1 y Gonen-0)
 
