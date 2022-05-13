@@ -1,4 +1,4 @@
-#Perceptor for the Rice Dataset
+#Perceptor for the rice Dataset
 
 #Libraries used:
 import pandas as pd
@@ -30,6 +30,7 @@ print("Accuracy on testing data:",clf.score(x_test,y_test))
 #Confusion matrix on training data
 print("Confusion matrix on training data:")
 print(confusion_matrix(y_train,y_pred_train))
+
 #Confusion matrix on testing data
 print("Confusion matrix on testing data:")
 print(confusion_matrix(y_test,y_pred_test))
