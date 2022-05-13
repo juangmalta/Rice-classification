@@ -15,7 +15,9 @@ data = pd.read_csv("./riceClassification.csv", index_col='id')
 data = data.dropna()
 
 #3. Headers of the data
+print()
 print(data.columns)
+print()
 
 #4. Split the data into training and testing sets
 X = data.drop(['Class','Extent'], axis=1)
@@ -26,6 +28,7 @@ clf = LogisticRegression(random_state=42, max_iter=1000).fit(X_train, Y_train)
 #5. Evaluate the model
 print("Accuracy of Logistic regression classifier on training set: {:.5f}".format(clf.score(X_train, Y_train)))
 print("Accuracy of Logistic regression classifier on test set: {:.5f}".format(clf.score(X_test, Y_test)))
+print()
 
 #6. Confusion Matrix
 #6.1 Training set
@@ -33,11 +36,13 @@ y_pred = clf.predict(X_train)
 cnf_matrix = metrics.confusion_matrix(Y_train, y_pred)
 print("Confusion matrix train:")
 print(cnf_matrix)
+print()
 #6.2 Testing set
 y_pred_test = clf.predict(X_test)
 cnf_matrix_test = metrics.confusion_matrix(Y_test, y_pred_test)
 print("Confusion matrix test:")
 print(cnf_matrix_test)
+print()
 
 #7. Plot the decision boundary
 # Area x Perimeter training set

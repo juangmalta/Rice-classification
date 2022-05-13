@@ -24,13 +24,17 @@ y_pred_train=clf.predict(x_train)
 y_pred_test=clf.predict(x_test)
 
 #Score the model
+print()
 print("Accuracy on training data:",clf.score(x_train,y_train))
 print("Accuracy on testing data:",clf.score(x_test,y_test))
+print()
 
 #Confusion matrix on training data
 print("Confusion matrix on training data:")
 print(confusion_matrix(y_train,y_pred_train))
+print()
 
 #Confusion matrix on testing data
 print("Confusion matrix on testing data:")
 print(confusion_matrix(y_test,y_pred_test))
+print()
