@@ -12,6 +12,8 @@ Gael Rodríguez Gómez A01639279
 
 E. Esteva Camacho A01632202
 
+Pablo Gutierrez Costales A01275119
+
 ## Dataset 
 
 La información usada en los modelos (dataset) fue extraida de la siguiente liga: 
