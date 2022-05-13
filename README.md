@@ -10,6 +10,8 @@ Juan Pablo García Malta A01639025
 
 Gael Rodríguez Gómez A01639279
 
+E. Esteva Camacho A01632202
+
 ## Dataset 
 
 La información usada en los modelos (dataset) fue extraida de la siguiente liga: 
