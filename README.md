@@ -2,8 +2,6 @@
 
 Modelos en python para clasificar arroz según el tipo (Jasmine-1 y Gonen-0)
 
-*El propósito de este proyecto es meramente educativo*
-
 ## Colaboradores
 
 Luis Alberto Alcántara Cabrales A01634185
@@ -24,3 +22,5 @@ La información usada en los modelos (dataset) fue extraida de la siguiente liga
 
 Naviani, A. (2019). Understanding Logistic Regression in Python Tutorial. Recuperado de 
 [datacamp.com](https://www.datacamp.com/tutorial/understanding-logistic-regression-python)
+
+*El propósito de este proyecto es meramente educativo*
