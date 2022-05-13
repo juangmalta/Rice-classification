@@ -1,6 +1,8 @@
 # Rice Classification
 
-Modelos para clasificar arroz según el tipo (Jasmine-1 y Gonen-0)
+Modelos en python para clasificar arroz según el tipo (Jasmine-1 y Gonen-0)
+
+*El propósito de este proyecto es meramente educativo*
 
 ## Colaboradores
 
