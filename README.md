@@ -1,4 +1,4 @@
-# Rice classification
+# Rice Classification
 
 ### Colaboradores
 
