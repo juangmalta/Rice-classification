@@ -12,6 +12,8 @@ from sklearn import metrics
 data = pd.read_csv("./riceClassification.csv", index_col='id')
 
 #2. Clean the data
+print(data.isnull().sum())
+print()
 data = data.dropna()
 
 #3. Headers of the data
