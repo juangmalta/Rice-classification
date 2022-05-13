@@ -16,7 +16,7 @@ data = data.dropna()
 
 #3. Headers of the data
 print()
-print(data.columns)
+print(data.head())
 print()
 
 #4. Split the data into training and testing sets
