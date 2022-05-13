@@ -25,10 +25,12 @@ print("Accuracy of Logistic regression classifier on training set: {:.5f}".forma
 print("Accuracy of Logistic regression classifier on test set: {:.5f}".format(clf.score(X_test, Y_test)))
 
 #5. Confusion Matrix
+#5.1 Training set
 y_pred = clf.predict(X_train)
 cnf_matrix = metrics.confusion_matrix(Y_train, y_pred)
 print("Confusion matrix train:")
 print(cnf_matrix)
+#5.2 Testing set
 y_pred_test = clf.predict(X_test)
 cnf_matrix_test = metrics.confusion_matrix(Y_test, y_pred_test)
 print("Confusion matrix test:")
