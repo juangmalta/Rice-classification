@@ -18,7 +18,7 @@ data = data.dropna()
 X = data.drop(['Class','Extent'], axis=1)
 Y = data['Class']
 X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_state=42)
-clf = LogisticRegression(random_state=0, max_iter=1000).fit(X_train, Y_train)
+clf = LogisticRegression(random_state=42, max_iter=1000).fit(X_train, Y_train)
 
 #4. Evaluate the model
 print("Accuracy of Logistic regression classifier on training set: {:.5f}".format(clf.score(X_train, Y_train)))
